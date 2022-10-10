@@ -84,118 +84,131 @@ const getType = (field) => {
   }
   if (field.type === "wil_post") {
     return `{
-      items: {
-        title: string;
-        id?: string;
-        content?: string;
-        slug?: string;
-        excerpt?: string;
-        createDate?: string;
-        modifiedDate?: string;
-        link?: string;
-        image?: {
-          small?: {
-            src: string;
-            width: number;
-            height: number;
-          };
-          medium?: {
-            src: string;
-            width: number;
-            height: number;
-          };
-          large?: {
-            src: string;
-            width: number;
-            height: number;
-          }
-        };
-        categories: {
-          name : string;
-          count : number;
-          link : string;
-        }[];
-        comments?: {
-          content?: string;
-          createDate?: string;
-          modifiedDate?: string;
-          authorName?: string;
-          authorIP?: string;
-          authorUrl?: string;
-          authorEmail?: string;
-        }[];
-        author?: {
-          id?: string;
-          authorName?: string;
-          authorEmail?: string;
-          authorUrl?: string;
-          avatar?: string;
-        };
-      }[];
-    }
-    `;
-  }
-  if (field.type === "wil_product") {
-    return `{
-      items: {
-      id?: number;
+    items: {
       title: string;
-      slug?: string;
-      link?: string;
-      price?: [string, string];
-      amountPrice?: [number, number];
-      inWishList: boolean;
+      id?: string;
+      image?: string;
       content?: string;
+      slug?: string;
+      excerpt?: string;
       createDate?: string;
-      outOfStock?: boolean;
-      onSale?: boolean;
-      sku?: string;
-      featuredImage?: {
-        small?: {
-          src: string;
-          width: number;
-          height: number;
-        };
-        medium?: {
-          src: string;
-          width: number;
-          height: number;
-        };
-        large?: {
-          src: string;
-          width: number;
-          height: number;
-        }
-      };
-      galleryImages?: {
-        small?: {
-          src: string;
-          width: number;
-          height: number;
-        };
-        medium?: {
-          src: string;
-          width: number;
-          height: number;
-        };
-        large?: {
-          src: string;
-          width: number;
-          height: number;
-        }
-      }[];
+      modifiedDate?: string;
+      link?: string;
       categories: {
         name : string;
         count : number;
         link : string;
       }[];
-      reviews: {
-        ratingCount: number | string;
-        reviewCount: number | string;
-        average: number | string;
-      }
+      comments?: {
+        content?: string;
+        createDate?: string;
+        modifiedDate?: string;
+        authorName?: string;
+        authorIP?: string;
+        authorUrl?: string;
+        authorEmail?: string;
+      }[];
+      author?: {
+        id?: string;
+        authorName?: string;
+        authorEmail?: string;
+        authorUrl?: string;
+        avatar?: string;
+      };
     }[];
   }
+    `;
+  }
+  if (field.type === "wil_product") {
+    return `{
+  items: {
+    id?: number;
+    title: string;
+    slug?: string;
+    link?: string;
+    amountPrice?: [number, number];
+    inWishList: boolean;
+    price?: [string, string];
+    content?: string;
+    createDate?: string;
+    outOfStock?: boolean;
+    onSale?: boolean;
+    sku?: string;
+    featuredImage?: {
+      small?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      medium?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      large?: {
+        src: string;
+        width: number;
+        height: number;
+      }
+    };
+    galleryImages?: {
+      small?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      medium?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      large?: {
+        src: string;
+        width: number;
+        height: number;
+      }
+    }[];
+    categories: {
+      name : string;
+      count : number;
+      link : string;
+    }[];
+    reviews: {
+      ratingCount: number | string;
+      reviewCount: number | string;
+      average: number | string;
+    }
+  }[];
+}
+`;
+  }
+  if (field.type === "wil_list_terms") {
+    return `{
+  items: {
+    term_id: number;
+    name: string;
+    slug: string;
+    description?: string;
+    count: number;
+    featuredImage?: {
+      small?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      medium?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      large?: {
+        src: string;
+        width: number;
+        height: number;
+      }
+    };
+  }[];
+}
 `;
   }
   if (Array.isArray(typeof field.default)) {
