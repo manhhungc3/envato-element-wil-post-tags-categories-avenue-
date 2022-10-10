@@ -1,0 +1,49 @@
+$componentName: "wiloke-post-tags-categories-avenue";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.#{$componentName}-wrapper {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  .veda-image-cover::before {
+    content: "";
+    display: block;
+    padding-top: calc( 1 / (var(--aspect-ratio, 1.33))*100%);
+  }
+
+  img {
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .wiloke-container,
+  .wiloke-content {
+    background-color: var(--color-light, #fff) !important;
+    border-color: var(--color-gray2, #f2f2f7) !important;
+  }
+
+  .wiloke-container:hover .wiloke-title {
+    color: var(--color-primary,#F57070) !important;
+  }
+  .wiloke-4-title {
+    background-color: var(--color-light, #fff) !important;
+  }
+  .wiloke-4-borderBox {
+    border-color: var(--color-light, #fff) !important;
+  }
+}
+.#{$componentName}-wrapper,
+.#{$componentName}-wrapper:before,
+.#{$componentName}-wrapper:after,
+.#{$componentName}-wrapper *,
+.#{$componentName}-wrapper *:before,
+.#{$componentName}-wrapper *:after {
+  box-sizing: border-box;
+  letter-spacing: 0 !important;
+  line-height: 1.5;
+}
+
