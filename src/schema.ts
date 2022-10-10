@@ -20,27 +20,49 @@ export const schema: Schema = [
           variant5: 'Variant 5',
         },
       },
-      { type: 'number', default: 0, name: 'imageRadius', label: 'Image Radius', min: 0, max: 200, condition: {
-        general_variant: ['variant1', 'variant2']
-      }},
+
       {
-        type: 'text',
-        label: 'Aspect ratio',
-        name: 'aspectRatio',
-        default: '300 / 209.78',
-        condition: {
-          general_variant: ['variant3', 'variant4', 'variant5']
+        type: 'wil_list_terms', name: 'posts', label: "Posts", default: {
+          categories: [
+            {
+              id: 1,
+              selected: true,
+              text: '',
+            },
+            {
+              id: 2,
+              selected: false,
+              text: '',
+            }
+          ],
+          limit: 4,
+          order: 'desc',
+          orderBy: "name",
+          hideEmpty: "0",
+          taxonomy: '',
         }
       },
-      {
-        type: 'array', default: [], name: 'content', label: 'Content', fields: [
-          { type: 'media', name: 'image', label: 'Image',default: {
-            url: '/wp-content/plugins/{{ name }}/src/Assets/Image/placeholder.jpeg'
-          }},
-          { type: 'text', default: 'Activewear', name: 'title', label: 'Title' },
-          { type: 'text', default: '', name: 'link', label: 'Link' }
-        ]
-      },
+      // { type: 'number', default: 0, name: 'imageRadius', label: 'Image Radius', min: 0, max: 200, condition: {
+      //   general_variant: ['variant1', 'variant2']
+      // }},
+      // {
+      //   type: 'text',
+      //   label: 'Aspect ratio',
+      //   name: 'aspectRatio',
+      //   default: '300 / 209.78',
+      //   condition: {
+      //     general_variant: ['variant3', 'variant4', 'variant5']
+      //   }
+      // },
+      // {
+      //   type: 'array', default: [], name: 'content', label: 'Content', fields: [
+      //     { type: 'media', name: 'image', label: 'Image',default: {
+      //       url: '/wp-content/plugins/{{ name }}/src/Assets/Image/placeholder.jpeg'
+      //     }},
+      //     { type: 'text', default: 'Activewear', name: 'title', label: 'Title' },
+      //     { type: 'text', default: '', name: 'link', label: 'Link' }
+      //   ]
+      // },
     ]
   },
   {

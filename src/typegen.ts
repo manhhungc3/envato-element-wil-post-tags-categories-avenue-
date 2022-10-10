@@ -1,13 +1,32 @@
 export type Data = {
 general: {
 variant: string;
-imageRadius: number;
-aspectRatio: string;
-content: {
-image: string;
-title: string;
-link: string;
-}[];
+posts: {
+  items: {
+    term_id: number;
+    name: string;
+    slug: string;
+    description?: string;
+    count: number;
+    featuredImage?: {
+      small?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      medium?: {
+        src: string;
+        width: number;
+        height: number;
+      };
+      large?: {
+        src: string;
+        width: number;
+        height: number;
+      }
+    };
+  }[];
+}
 };
 responsive: {
 lg: number;
