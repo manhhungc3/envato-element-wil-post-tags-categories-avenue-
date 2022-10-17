@@ -21,27 +21,27 @@ export const schema: Schema = [
         },
       },
 
-      {
-        type: 'wil_list_terms', name: 'posts', label: "Posts", default: {
-          categories: [
-            {
-              id: 1,
-              selected: true,
-              text: '',
-            },
-            {
-              id: 2,
-              selected: false,
-              text: '',
-            }
-          ],
-          limit: 4,
-          order: 'desc',
-          orderBy: "name",
-          hideEmpty: "0",
-          taxonomy: '',
-        }
-      },
+      // {
+      //   type: 'wil_list_terms', name: 'posts', label: "Posts", default: {
+      //     categories: [
+      //       {
+      //         id: 1,
+      //         selected: true,
+      //         text: '',
+      //       },
+      //       {
+      //         id: 2,
+      //         selected: false,
+      //         text: '',
+      //       }
+      //     ],
+      //     limit: 4,
+      //     order: 'desc',
+      //     orderBy: "name",
+      //     hideEmpty: "0",
+      //     taxonomy: '',
+      //   }
+      // },
       // { type: 'number', default: 0, name: 'imageRadius', label: 'Image Radius', min: 0, max: 200, condition: {
       //   general_variant: ['variant1', 'variant2']
       // }},
