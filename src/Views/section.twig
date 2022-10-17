@@ -4,7 +4,8 @@
 {% set gapStyles = '--gap-xs:' ~ data.responsive.gapXs ~ 'px;--gap-sm:' ~ data.responsive.gapSm ~ 'px;--gap-md:' ~ data.responsive.gapMd ~ 'px;--gap-lg:' ~ data.responsive.gapLg ~ 'px' %}
 
 {# {{data|json_encode}} #}
-{{ data.general.listTerms|json_encode }}
+{# {{ data.general.listTerms|json_encode }} #}
+
 {% set general = data.general %}
 {% set listTerms = data.general.listTerms %}
 {% set typography = data.typography %}

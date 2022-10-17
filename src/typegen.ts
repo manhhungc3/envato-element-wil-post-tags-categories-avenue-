@@ -2,7 +2,6 @@ export type Data = {
 general: {
 variant: string;
 listTerms: {
-  items: {
     term_id: number;
     name: string;
     slug: string;
@@ -24,7 +23,6 @@ listTerms: {
         width: number;
         height: number;
       }
-    };
   }[];
 }
 };

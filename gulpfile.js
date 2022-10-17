@@ -184,7 +184,6 @@ const getType = (field) => {
   }
   if (field.type === "wil_list_terms") {
     return `{
-  items: {
     term_id: number;
     name: string;
     slug: string;
@@ -206,7 +205,6 @@ const getType = (field) => {
         width: number;
         height: number;
       }
-    };
   }[];
 }
 `;

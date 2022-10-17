@@ -4,7 +4,8 @@
   <div class="wiloke-content pos:absolute t:3px l:0 r:0 z:-1 bd:1px_solid_#f2f2f7 bgc:#fff h:60px bdrs:15px {{componentName}}-1__content"></div>
   <div class="w:50px flxs:0">
     <div class="veda-image-cover pos:relative bgz:cover bgp:50%_50% w:50px h:50px bdrs:13px ov:hidden {{componentName}}-1__boxImage" style="{{imageRadius}}">
-      <img class="w:100% pos:absolute t:0 l:0 h:100% obf:cover {{componentName}}-1__image" src="{{item.image}}" alt="Sweatshirts" data-intrinsic-width="1000" data-intrinsic-height="1250">
+      {% set imageSize = data.responsive.lg ? 1400 / data.responsive.lg : 400 %}
+      <img class="w:100% pos:absolute t:0 l:0 h:100% obf:cover {{componentName}}-1__image" src="{{item.featuredImage.large.src | resize(imageSize) }}" alt="Sweatshirts" data-intrinsic-width="1000" data-intrinsic-height="1250">
     </div>
   </div>
   {% if item.name %}
