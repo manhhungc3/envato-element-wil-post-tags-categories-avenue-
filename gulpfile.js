@@ -205,8 +205,8 @@ const getType = (field) => {
         width: number;
         height: number;
       }
-  }[];
-}
+    };
+  }[]
 `;
   }
   if (Array.isArray(typeof field.default)) {
