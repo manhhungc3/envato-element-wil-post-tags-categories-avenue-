@@ -7,15 +7,51 @@ export const data: Data = {
       items: [
         {
           count: 1,
-          name: 'hom nay la thu 2',
+          name: 'hom nay la thu 1',
           slug: 'name1',
-          term_id: 2,
+          term_id: 5,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 2',
+          slug: 'name2',
+          term_id: 1,
         },
         {
           count: 2,
           name: 'hom nay la thu 3',
           slug: 'name2',
           term_id: 3,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 4',
+          slug: 'name2',
+          term_id: 5,
+        },
+        {
+          count: 1,
+          name: 'hom nay la thu 5',
+          slug: 'name1',
+          term_id: 5,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 6',
+          slug: 'name2',
+          term_id: 3,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 7',
+          slug: 'name2',
+          term_id: 5,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 8',
+          slug: 'name2',
+          term_id: 2,
         }
       ]
     }

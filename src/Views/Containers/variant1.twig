@@ -1,7 +1,8 @@
 {% set componentName = "wiloke-post-tags-categories-avenue" %}
 {% set componentFile = 'component1.twig' %}
+{% set content = listTerms.items %}
 
-{% if listTerms.items|length == 0 %}
+{% if content|length == 0 %}
 <div class="{{ componentName }}-wrapper">
   <div class="p:40px fz:20px ta:center bgc:#eee cur:pointer">Click here to set up the post</div>
 </div>
@@ -35,7 +36,7 @@
       >
         <div class="swiper">
           <div class="swiper-wrapper d:flex mb:5px">
-            {% for item in listTerms.items %}
+            {% for item in content %}
               <div class="swiper-slide h:auto! mih:100%! d:flex! fld:column!">
                 {% include "Shared/" ~ componentFile %}
               </div>
@@ -52,7 +53,7 @@
       </div>
     {% else %}
       <div class="{{ componentName }}-grid" style="{{ columnStyles }};{{ gapStyles }}">
-        {% for item in listTerms.items %}
+        {% for item in content %}
           <div class="{{ componentName }}-col">
             {% include "Shared/" ~ componentFile %}
           </div>

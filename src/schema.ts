@@ -41,7 +41,7 @@ export const schema: Schema = [
             },
           ],
           hideEmpty: "1",
-          limit: 1,
+          limit: 8,
           order: 'desc',
           taxonomy: 'Categories',
         }
