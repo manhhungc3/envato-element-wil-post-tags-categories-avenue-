@@ -3,51 +3,22 @@ import { Data } from "../typegen";
 export const data: Data = {
   general: {
     variant: "variant1",
-    imageRadius: 0,
-    aspectRatio: '',
-    content: [
-      {
-        image: '../img/1.png',
-        title: 'Activewear',
-        link: 'https://www.youtube.com/',
-      },
-      {
-        image: '../img/2.png',
-        title: 'Sweatshirts',
-        link: '',
-      },
-      {
-        image: '../img/3.png',
-        title: 'Coats & Jackets',
-        link: '',
-      },
-      {
-        image: '../img/4.png',
-        title: 'Dresses',
-        link: '',
-      },
-      {
-        image: '../img/1.png',
-        title: 'Waistcoats',
-        link: '',
-      },
-      {
-        image: '../img/2.png',
-        title: 'Jeans',
-        link: '',
-      },
-      {
-        image: '../img/3.png',
-        title: 'Skirts & Tops',
-        link: '',
-      },
-      {
-        image: '../img/4.png',
-        title: 'Swimsuits',
-        link: '',
-      }
-
-    ]
+    listTerms: {
+      items: [
+        {
+          count: 1,
+          name: 'hom nay la thu 2',
+          slug: 'name1',
+          term_id: 2,
+        },
+        {
+          count: 2,
+          name: 'hom nay la thu 3',
+          slug: 'name2',
+          term_id: 3,
+        }
+      ]
+    }
 
   },
   typography: {

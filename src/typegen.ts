@@ -1,7 +1,7 @@
 export type Data = {
 general: {
 variant: string;
-posts: {
+listTerms: {
   items: {
     term_id: number;
     name: string;
