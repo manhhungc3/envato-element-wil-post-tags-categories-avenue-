@@ -204,9 +204,30 @@ const getType = (field) => {
         src: string;
         width: number;
         height: number;
-      }
+      };
     };
-  }[]
+    posts?: {
+      link: string;
+      title: string;
+      featuredImage?: {
+        small?: {
+          src: string;
+          width: number;
+          height: number;
+        };
+        medium?: {
+          src: string;
+          width: number;
+          height: number;
+        };
+        large?: {
+          src: string;
+          width: number;
+          height: number;
+        }
+      };
+    }[];
+}[]
 `;
   }
   if (Array.isArray(typeof field.default)) {

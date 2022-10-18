@@ -3,12 +3,77 @@ import { Data } from "../typegen";
 export const data: Data = {
   general: {
     variant: "variant1",
-    listTerms: {
-      count: 1,
-      name: 'home',
-      slug: 'day',
-      term_id: 2,
-    }
+    listTerms: [
+      {
+        count: 4,
+        name: 'hom nay la thu 2',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/1.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          }
+        }
+      },
+      {
+        count: 4,
+        name: 'hom nay la thu 3',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/1.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          }
+        }
+      },
+      {
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/1.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          }
+        }
+      }
+    ]
   },
   typography: {
     titleTypo: '',

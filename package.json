@@ -1,6 +1,6 @@
 {
   "name": "wiloke-post-tags-categories-avenue",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "main": "index.js",
   "author": "wiloke1",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "browser-sync": "^2.27.7",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.7",
-    "elementor-php-core": "^1.7.0",
+    "elementor-php-core": "^1.8.2",
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
     "gulp": "^4.0.2",

@@ -22,6 +22,7 @@ export const schema: Schema = [
       },
       {
         type: 'wil_list_terms', name: 'listTerms', label: 'List Terms', default:  {
+          enablePostType: true,
           orderBy: 'name',
           categories: [
             {
