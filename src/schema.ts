@@ -20,6 +20,18 @@ export const schema: Schema = [
           variant5: 'Variant 5',
         },
       },
+      { type: 'number', default: 0, name: 'imageRadius', label: 'Image Radius', min: 0, max: 200, condition: {
+        general_variant: ['variant1', 'variant2']
+      }},
+      {
+        type: 'text',
+        label: 'Aspect ratio',
+        name: 'aspectRatio',
+        default: '300 / 209.78',
+        condition: {
+          general_variant: ['variant3', 'variant4', 'variant5']
+        }
+      },
       {
         type: 'wil_list_terms', name: 'listTerms', label: 'List Terms', default:  {
           enablePostType: true,

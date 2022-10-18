@@ -1,7 +1,6 @@
 {% set componentName = "wiloke-post-tags-categories-avenue" %}
 {% set componentFile = 'component1.twig' %}
 
-{{listTerms | json_encode}}
 {% if listTerms|length == 0 %}
 <div class="{{ componentName }}-wrapper">
   <div class="p:40px fz:20px ta:center bgc:#eee cur:pointer">Click here to set up the post</div>

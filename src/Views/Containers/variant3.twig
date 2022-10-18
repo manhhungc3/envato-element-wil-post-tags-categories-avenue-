@@ -2,7 +2,7 @@
 {% set componentFile = 'component3.twig' %}
 
 
-{% if content|length == 0 %}
+{% if listTerms|length == 0 %}
 <div class="{{ componentName }}-wrapper">
   <div class="p:40px fz:20px ta:center bgc:#eee cur:pointer">Click here to set up the post</div>
 </div>
@@ -10,7 +10,7 @@
 <div class="{{ componentName }}-wrapper lh:1.5">
   <div class="{{ componentName }}-skeleton">
     <div class="{{ componentName }}-grid" style="{{ columnStyles }};{{ gapStyles }}">
-      {% for item in content %}
+      {% for item in listTerms %}
         <div class="{{ componentName }}-col">
           {% include "Skeleton/skeleton1.twig" %}
         </div>
@@ -36,7 +36,7 @@
       >
         <div class="swiper">
           <div class="swiper-wrapper d:flex mb:5px">
-            {% for item in content %}
+            {% for item in listTerms %}
               <div class="swiper-slide h:auto! mih:100%! d:flex! fld:column!">
                 {% include "Shared/" ~ componentFile %}
               </div>
@@ -53,7 +53,7 @@
       </div>
     {% else %}
       <div class="{{ componentName }}-grid" style="{{ columnStyles }};{{ gapStyles }}">
-        {% for item in content %}
+        {% for item in listTerms %}
           <div class="{{ componentName }}-col">
             {% include "Shared/" ~ componentFile %}
           </div>

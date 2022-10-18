@@ -1,6 +1,8 @@
 export type Data = {
 general: {
 variant: string;
+imageRadius: number;
+aspectRatio: string;
 listTerms: {
     term_id: number;
     name: string;

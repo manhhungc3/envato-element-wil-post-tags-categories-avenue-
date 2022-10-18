@@ -5,48 +5,191 @@ export const data: Data = {
     variant: "variant3",
     imageRadius: 0,
     aspectRatio: "119.2/99.33",
-    content: [
+    listTerms: [
       {
-        image: '../img/1.png',
-        title: 'Activewear',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 2',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/1.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/1.png'
+          }
+        }
       },
       {
-        image: '../img/2.png',
-        title: 'Sweatshirts',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 3',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/2.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/2.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/2.png'
+          }
+        }
       },
       {
-        image: '../img/3.png',
-        title: 'Coats & Jackets',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       },
       {
-        image: '../img/4.png',
-        title: 'Dresses',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       },
       {
-        image: '../img/1.png',
-        title: 'Waistcoats',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       },
       {
-        image: '../img/2.png',
-        title: 'Jeans',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       },
       {
-        image: '../img/3.png',
-        title: 'Skirts & Tops',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       },
       {
-        image: '../img/4.png',
-        title: 'Swimsuits',
-        link: '',
+        count: 4,
+        name: 'hom nay la thu 4',
+        slug: 'thu 2',
+        term_id: 3,
+        featuredImage: {
+          small: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          },
+          medium: {
+            width: 200,
+            height: 200,
+            src: '../img/3.png'
+          },
+          large: {
+            width: 100,
+            height: 100,
+            src: '../img/3.png'
+          }
+        }
       }
-
     ]
 
 
